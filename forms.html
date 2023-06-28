@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./sytles.css">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Cajero</h1>
+  <form id="cajero">
+    <input 
+      name="cantidadRetiro"
+      id="retiro-input"
+      class="input"
+      type="number"
+      placeholder="Cantidad que quieres retirar" 
+    />
+    <button
+      type="reset"
+      class="button is-warning"
+    >Cancelar</button>
+    <button
+    type="submit"
+    class="button is-info"
+    >Deposito</button>
+  </form>
+  <div>
+    <p>Retiraste</p>
+    $<span id="retiro">0</span>
+  </div>
+  <script defer src="./cajero.js"></script>
+</body>
+</html>

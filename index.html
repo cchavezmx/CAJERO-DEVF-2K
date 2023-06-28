@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="titulo" id="saludo">Clase de DOM</h1>
+  <!-- <button onclick="cambiador()">Cambiar Texto</button> -->
+  <button id="btn">Cambiar Texto</button>  
+
+  <script>
+    // window addEventListner
+    // camelCase
+    const btn = document.querySelector("#btn")
+    console.log(btn)
+    btn.addEventListener('click', cambiador)
+
+    function cambiador(){
+      const titulo = document.querySelector('h1')
+      titulo.textContent = "Usen querySelector por que es mas mejor"
+    }
+
+    function adios(){
+      const titulo = document.querySelector('h1')
+      titulo.textContent = "Adios"      
+    }
+  </script>
+</body>
+</html>
