@@ -27,9 +27,18 @@
     class="button is-info"
     >Deposito</button>
   </form>
+  <button
+  id="retiro-button"
+  type="button"
+  class="button is-danger"
+  >Retiro</button>
+</form>
   <div>
     <p>Retiraste</p>
     $<span id="retiro">0</span>
+  </div>
+  <div id="notification" class="notification is-danger alert hidden">
+    <button id="close_notification" class="delete"></button>    
   </div>
   <script defer src="./cajero.js"></script>
 </body>
