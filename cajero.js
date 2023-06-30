@@ -44,9 +44,18 @@ retiroButton.addEventListener('click', () => {
     notification.classList.toggle("hidden")
     const span = document.createElement("span")
     // span.textContent = "Fondos insuficientes"
+    span.setAttribute("class", "h1-font color-red")  // reescribir todos los valores del atributo
+    span.setAttribute("id", "span-js")
+    span.classList.add("estilo1")   
+    // span.innerText =""
     span.innerHTML = "<h1 class='h1-font'>Fondos <strong>insuficientes</strong></h1>"
+
+    const imagen = document.createElement("img")
+    imagen.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7B67tvELH0nM8C9Pcexk1MM9egsFCn-cWKg&usqp=CAU"
+    imagen.alt="Imagen de gatito"
+    // añade los elementos hmtl creados apartir de javascript
     notification.appendChild(span)
-    return
+    document.body.appendChild(imagen)
   }
 
   cantidadRetirada = cantidadRetirada - Number(retiro)
